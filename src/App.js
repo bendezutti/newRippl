@@ -12,7 +12,6 @@ function App() {
 
   return (
     <div> 
-      <button className = "addEntry"> Add Entry </button>
       {stateOfModal && <ModalForm openModal={openModal} setEntry={setEntry} />}
       {stateOfCard && <EntryCard openCard= {openCard} text = {text}/>}
     </div>
