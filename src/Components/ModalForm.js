@@ -1,25 +1,16 @@
 import { Form } from "react-bootstrap"
-import {useState} from 'react'
+function ModalForm ({ openModal, setEntry}) {
 
-
-
-
-function ModalForm () {
-
-  const [stateOfModal, openModal] = useState(true);
-  
   return (
     <div className="modalBackGround">
       <div className="modalContainer" >
-        <Form>
-            <Form.Label>What Rippls Your Pond?</Form.Label>
-            <Form.Control type = "text" name = "submission"/> 
-        <div> 
-        </div>
+        <Form onSubmit={(e) => {openModal(false); e.preventDefault(); setEntry(e.target[0].value);}}>
+              <Form.Label>What Rippls Your Pond?</Form.Label>
+              <input entry = "entry"  /> 
         </Form>
-      </div>
-    </div>
-  )
+      </div> 
+    </div> 
+  ) 
 }
 
 
