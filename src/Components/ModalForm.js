@@ -1,4 +1,9 @@
 import { Form } from "react-bootstrap"
+
+// Modal Form
+// @param {state} openModal is the state of the modal form
+// @param {text} setEntry sets the entry text in the EntryCard component
+// Author: Benjamin DeZutti
 function ModalForm ({ openModal, setEntry}) {
 
   return (

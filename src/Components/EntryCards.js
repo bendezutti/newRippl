@@ -1,5 +1,7 @@
 import Card from "react-bootstrap/Card"
 
+// Card Entry component
+// Author: Bejamin DeZutti
 const EntryCards = ({text}) => {
   return (
 
